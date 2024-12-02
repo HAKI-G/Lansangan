@@ -136,7 +136,7 @@
         <div class="info-slider">
             <div class="info-item">
                 <h2 class="text-[#C7253E]">burger</h2>
-                <p>"Experience bliss with our ultimate burger! Juicy beef patty, fresh veggies, melted cheese, in a sesame seed bun.</p>
+                <p>"Experience bliss with our ultimate burger! Juicy beef patty, fresh veggies, melted cheese, in a sesame seed bun!.</p>
             </div>
             <div class="info-item">
                 <h2 class="text-[#C7253E]">pizza</h2>
