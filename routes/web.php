@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController; // Add this line to import HomeControll
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Http\Controllers\AdminController;
 
 
 Route::middleware([
@@ -20,3 +21,6 @@ Route::middleware([
 Route::get('/redirect', [HomeController::class, 'redirect']); 
 
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/product', [AdminController::class, 'product']);
+
