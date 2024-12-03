@@ -35,3 +35,8 @@ Route::get('/showproduct', [AdminController::class, 'showproduct'])->name('showp
 
 Route::get('/deleteproduct/{id}', [AdminController::class, 'deleteproduct'])->name('deleteproduct');
 
+Route::get('/updateview/{id}', [AdminController::class, 'updateview'])->name('updateview');
+
+Route::post('/updateproduct/{id}', [AdminController::class, 'updateproduct'])->name('updateproduct');
+
+
