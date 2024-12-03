@@ -178,9 +178,11 @@
                                 <h1 class="text-6xl text-[#C7253E]">burger</h1>
                                 <p>Bite into bliss with our ultimate burger! Juicy beef patty, fresh veggies, and melted cheese, all embraced by a sesame seed bun. Order now for a taste of deliciousness!</p>
                                 <!-- button inside description -->
+                                <a href="{{ route('cart') }}">
                                 <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                                     order now
                                 </button>
+                                </a>
                             </div>
                             <button onclick="closePopup()" class="absolute top-2 right-2 text-black text-lg font-bold">X</button>
                         </div>
@@ -198,9 +200,11 @@
                             <div class="description">  
                                 <h1 class="text-6xl text-[#C7253E]">Pizza</h1>
                                 <p>Slice into happiness with our mouth-watering pizza! Crispy crust, tangy sauce, and a generous layer of gooey cheese topped with your favorite ingredients. Treat yourself to a pizza party today</p>
+                                <a href="{{ route('cart') }}">
                                 <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                                     order now
                                 </button>
+                                </a>
                             </div>
                             <button onclick="closeTomatoPopup()" class="absolute top-2 right-2 text-black text-lg font-bold">X</button>
                         </div>
@@ -217,9 +221,11 @@
                             <div class="description">  
                                 <h1 class="text-6xl text-[#C7253E]">fried chicken</h1>
                                 <p>Crispy, golden perfection! Our fried chicken is packed with flavor and crunch. Indulge in the ultimate comfort food today!</p>
+                                <a href="{{ route('cart') }}">
                                 <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                                     order now
                                 </button>
+                                </a>
                             </div>
                             <button onclick="closeFriedChickenPopup()" class="absolute top-2 right-2 text-black text-lg font-bold">X</button>
                         </div>
@@ -236,9 +242,11 @@
                             <div class="description">  
                                 <h1 class="text-6xl text-[#C7253E]">lasagna</h1>
                                 <p>Layers of love in every bite! Dive into our cheesy, saucy, and perfectly baked lasagna. It's comfort food at its finest</p>
+                                <a href="{{ route('cart') }}">
                                 <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                                     order now
                                 </button>
+                                </a>
                             </div>
                             <button onclick="closeLasagnaPopup()" class="absolute top-2 right-2 text-black text-lg font-bold">X</button>
                         </div>
@@ -255,9 +263,11 @@
                             <div class="description">  
                                 <h1 class="text-6xl text-[#C7253E]">chicken wings</h1>
                                 <p>Get ready for a flavor explosion with our crispy, saucy chicken wings! Perfectly seasoned and cooked to perfection. Dive into wing heaven today</p>
+                                <a href="{{ route('cart') }}">
                                 <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                                     order now
                                 </button>
+                                </a>
                             </div>
                             <button onclick="closeChickenWingsPopup()" class="absolute top-2 right-2 text-black text-lg font-bold">X</button>
                         </div>
@@ -274,9 +284,11 @@
                             <div class="description">  
                                 <h1 class="text-6xl text-[#C7253E]">Spaghetti</h1>
                                 <p>Twirl into taste with our delicious spaghetti! Perfectly cooked pasta topped with rich, savory sauce and a sprinkle of parmesan. Dive into a plate of pure comfort</p>
+                                <a href="{{ route('cart') }}">
                                 <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                                     order now
                                 </button>
+                                </a>
                             </div>
                             <button onclick="closeSpagPopup()" class="absolute top-2 right-2 text-black text-lg font-bold">X</button>
                         </div>
@@ -293,9 +305,11 @@
                             <div class="description">  
                                 <h1 class="text-6xl text-[#C7253E]">halo-halo</h1>
                                 <p>Cool down with our colorful and refreshing halo-halo! A delightful mix of sweetened fruits, jellies, beans, shaved ice, and creamy leche flan. It's a fiesta in every spoonful!</p>
+                                <a href="{{ route('cart') }}">
                                 <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                                     order now
                                 </button>
+                                </a>
                             </div>
                             <button onclick="closeHaloHaloPopup()" class="absolute top-2 right-2 text-black text-lg font-bold">X</button>
                         </div>
@@ -312,9 +326,11 @@
                             <div class="description">  
                                 <h1 class="text-6xl text-[#C7253E]">pizza tomato</h1>
                                 <p>Savor the simplicity of our tomato pizza! Fresh, juicy tomatoes, fragrant basil, and a crispy crust, all topped with melted mozzarella. Pure, delicious perfection</p>
+                                <a href="{{ route('cart') }}">
                                 <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                                     order now
                                 </button>
+                                </a>
                             </div>
                             <button onclick="closePizzaPopup()" class="absolute top-2 right-2 text-black text-lg font-bold">X</button>
                         </div>
@@ -339,8 +355,10 @@
         <p class="mb-6">
         Enjoy a delicious burger at half the price! Get 50% off all burgers now. Don’t miss out on this tasty deal!
         </p>
-        <a href="#" class="inline-flex items-center justify-center rounded-lg px-5 py-3 bg-red-700 text-white font-medium hover:bg-red-800 focus:ring-4 focus:ring-red-300">
-            Pre-order now
+        <a href="{{ route('cart') }}">
+            <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
+                pre-order now
+            </button>
         </a>
     </div>
 </section>

@@ -27,7 +27,7 @@ Route::get('/product', [AdminController::class, 'product']);
 
 Route::post('/uploadproduct', [AdminController::class, 'uploadproduct']);
 
-Route::get('/cart', [CartController::class, 'index'])->name('cart');
+Route::post('/cart/{id}', [CartController::class, 'addToCart'])->name('addToCart');
 
 Route::get('/cart', [CartController::class, 'index'])->name('cart')->middleware('auth');
 
@@ -38,5 +38,15 @@ Route::get('/deleteproduct/{id}', [AdminController::class, 'deleteproduct'])->na
 Route::get('/updateview/{id}', [AdminController::class, 'updateview'])->name('updateview');
 
 Route::post('/updateproduct/{id}', [AdminController::class, 'updateproduct'])->name('updateproduct');
+
+Route::post('/product/{id}', [CartController::class, 'product'])->name('product');
+
+Route::post('/cart/{id}', [CartController::class, 'cart']);
+
+Route::post('/cart/{id}', [CartController::class, 'addToCart'])->name('addToCart');
+
+Route::delete('/cart/{id}', [CartController::class, 'removeFromCart'])->name('removeFromCart');
+
+
 
 
