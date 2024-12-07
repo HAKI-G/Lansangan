@@ -355,7 +355,7 @@
         <p class="mb-6">
         Enjoy a delicious burger at half the price! Get 50% off all burgers now. Don’t miss out on this tasty deal!
         </p>
-        <a href="{{ route('cart') }}">
+        <a>
             <button class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
                 pre-order now
             </button>
@@ -414,7 +414,12 @@
         <div class="font-light sm:text-lg lg:transform lg:-translate-x-full lg:opacity-0 lg:transition-transform lg:duration-500 lg:ease-in-out lg:group-hover:translate-x-0 lg:group-hover:opacity-100">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#C7253E]">5000+ Happy Customers</h2>
             <p class="mb-4">Why choose us? Join our community of over 5000 happy customers who have experienced our commitment to quality and service. Each satisfied customer is a testament to our dedication and hard work. Trust in our proven track record of delivering excellence and making every customer a priority</p>
-            <p>Experience the best with us! With over 5000 happy customers, our reputation for exceptional service and satisfaction speaks for itself. Our team is dedicated to maintaining this high standard, ensuring you receive the best experience every time. Be part of our growing family of delighted customers.</p>
+            <button onclick="fetchJoke()" class="mt-4 px-4 py-2 bg-[#C7253E] text-white rounded-lg hover:bg-[#A01C2D] transition duration-200">
+            Get Joke
+        </button>
+
+        <!-- Display the fetched joke here -->
+        <p id="jokeDisplay" class="mt-4 text-lg text-center text-gray-700">Click the button to get a joke!</p>
         </div>
         
         <!-- Image Section with Slide Right Animation for Large Screens -->

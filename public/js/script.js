@@ -184,3 +184,55 @@ function closePizzaPopup() {
     const popup = document.getElementById("pizzaPopupOverlay");
     popup.classList.add("opacity-0", "pointer-events-none");
 }
+
+// Function to fetch a joke from the API
+// Function to fetch a joke from the API
+function fetchJoke() {
+    // API URL
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Any';
+
+    // Check if Notification API is supported
+    if (!("Notification" in window)) {
+        alert("This browser does not support desktop notifications");
+        return;
+    }
+
+    // Fetch the joke
+    fetch(apiUrl)
+        .then(response => response.json()) // Convert the response to JSON
+        .then(data => {
+            // Check if it's a single-part or two-part joke
+            let jokeContent = '';
+
+            if (data.type === 'single') {
+                jokeContent = data.joke;
+            } else if (data.type === 'twopart') {
+                jokeContent = `${data.setup} - ${data.delivery}`;
+            }
+
+            // Display the joke on the webpage
+            document.getElementById('jokeDisplay').textContent = jokeContent;
+
+            // Show a browser notification
+            if (Notification.permission === "granted") {
+                const notification = new Notification("Joke of the Day", {
+                    body: jokeContent,
+                    icon: 'https://example.com/icon.png', // You can add an icon
+                });
+            } else if (Notification.permission === "default") {
+                // Request permission to show notifications
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") {
+                        const notification = new Notification("Joke of the Day", {
+                            body: jokeContent,
+                            icon: 'https://example.com/icon.png',
+                        });
+                    }
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching joke:', error);
+            document.getElementById('jokeDisplay').textContent = 'Sorry, could not fetch a joke at the moment.';
+        });
+}
